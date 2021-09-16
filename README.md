@@ -4,7 +4,8 @@ simple writeup
 
 ------------------------------------------------------
 
-$nmap -sC -sV -oA nmap/smag-ports 10.10.25.124
+nmap -sC -sV &IP:
+
 Starting Nmap 7.91 ( https://nmap.org/ ) at 2021-09-13 17:31 -03
 Nmap scan report for 10.10.25.124
 Host is up (0.20s latency).
@@ -41,18 +42,71 @@ donwloading the pcap file:
 
 ------------------------------------------------------
 
-------------------------------------------------------
+following the tcp stream from the 4th package:
 
 ![5](https://user-images.githubusercontent.com/67773431/133356480-050cfd0e-765c-4c5b-92e1-a8f017f53196.png)
+
+------------------------------------------------------
+
+add the new host to /etc/hosts
+
+------------------------------------------------------
+
+acessing the new virtual host:
+
 ![6](https://user-images.githubusercontent.com/67773431/133356481-13d4e734-bd4e-408e-931e-aa66ea9b00c9.png)
+
+------------------------------------------------------
+
+accessing the login.php directory u will find a login page, use the credencials that u got analyzing the pcap file
+
+------------------------------------------------------
+
+at the admin.php directory u can send commands to the web server. use this reverse shell and set a netcat listener at your 
+host machine:
+
 ![7](https://user-images.githubusercontent.com/67773431/133356482-1f71bb9a-fa5c-45d7-8dea-5b435efa36a5.png)
 ![8](https://user-images.githubusercontent.com/67773431/133356484-7f96070e-0bd4-4510-b7d4-5612097b7d63.png)
+
+------------------------------------------------------
+
+using linpeas.sh to enumerate the machine u will find this:
+
 ![9](https://user-images.githubusercontent.com/67773431/133356485-a0f06850-5996-4514-96fc-d19a9f48fcff.png)
+
+------------------------------------------------------
+
+the file jake_id_rsa.pub.backup is being sent for the authorized_keys at jake's directory. with that in mind u can generate a ssh key pair at your local machine with the command:
+
 ![10](https://user-images.githubusercontent.com/67773431/133356486-7e73f14a-1421-4c95-a089-f87dfada07a5.png)
+
+------------------------------------------------------
+
+now u can send your public ssh key to the file jake_id_rsa.pub.backup
+
 ![11](https://user-images.githubusercontent.com/67773431/133356487-850e868f-2a4b-4991-9b69-44ffcfa92565.png)
+
+------------------------------------------------------
+
+use your private key to access the ssh
+
 ![12](https://user-images.githubusercontent.com/67773431/133356488-c2de5c88-0d2b-4a03-b43f-becacf9f5cd2.png)
+
+------------------------------------------------------
+
+cat the user.txt flag
+
 ![13](https://user-images.githubusercontent.com/67773431/133356489-61421b99-8bfd-4e78-a8ae-082a9220bf19.png)
+
+------------------------------------------------------
+
+see jake's permissions using sudo -l:
+
 ![14](https://user-images.githubusercontent.com/67773431/133356491-fd3e22b7-4c14-42c6-9ceb-31fb00051eb1.png)
+
+------------------------------------------------------
+
+
 ![15](https://user-images.githubusercontent.com/67773431/133356494-ac7249ea-6e6e-43bb-a8e9-ef0be5664f2b.png)
 ![16](https://user-images.githubusercontent.com/67773431/133356495-d8babc19-c666-4c01-b18e-d896d687c419.png)
 ![17](https://user-images.githubusercontent.com/67773431/133356496-ffa41dbe-0823-4074-ac5b-4a95f9777686.png)
