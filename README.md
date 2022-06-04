@@ -70,9 +70,15 @@ host machine:
 
 ------------------------------------------------------
 
-using linpeas.sh to enumerate the machine u will find this:
+then u get a webshell
 
 ![9](https://user-images.githubusercontent.com/67773431/133356485-a0f06850-5996-4514-96fc-d19a9f48fcff.png)
+
+------------------------------------------------------
+
+using linpeas.sh to enumerate the machine u will find this:
+
+![linpeas](https://user-images.githubusercontent.com/67773431/171980841-b965f772-30ed-4c90-94b6-b657c3440582.png)
 
 ------------------------------------------------------
 
@@ -110,3 +116,6 @@ see jake's permissions using sudo -l:
 ![15](https://user-images.githubusercontent.com/67773431/133356494-ac7249ea-6e6e-43bb-a8e9-ef0be5664f2b.png)
 ![16](https://user-images.githubusercontent.com/67773431/133356495-d8babc19-c666-4c01-b18e-d896d687c419.png)
 ![17](https://user-images.githubusercontent.com/67773431/133356496-ffa41dbe-0823-4074-ac5b-4a95f9777686.png)
+
+
+
