@@ -1,6 +1,6 @@
 # THM-Smag-Grotto
 
-simple writeup
+simple writeup // https://tryhackme.com/room/smaggrotto
 
 ------------------------------------------------------
 
