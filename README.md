@@ -112,7 +112,12 @@ see jake's permissions using sudo -l:
 
 ------------------------------------------------------
 
+jake have NOPASSWD right to run /usr/bin/apt-get (https://vk9-sec.com/apt-get-privilege-escalation/)
+
 ![16](https://user-images.githubusercontent.com/67773431/133356495-d8babc19-c666-4c01-b18e-d896d687c419.png)
+
+------------------------------------------------------
+
 ![17](https://user-images.githubusercontent.com/67773431/133356496-ffa41dbe-0823-4074-ac5b-4a95f9777686.png)
 
 
