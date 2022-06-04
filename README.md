@@ -25,7 +25,7 @@ Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
 
 using ffuf to find new directories:
 
-![1](https://user-images.githubusercontent.com/67773431/133356472-bc48fef4-600a-4eeb-8d32-4f6f1ad0c4e1.png)
+https://user-images.githubusercontent.com/67773431/133356472-bc48fef4-600a-4eeb-8d32-4f6f1ad0c4e1.png
 ![2](https://user-images.githubusercontent.com/67773431/133356475-e9eaef4d-ffdd-4cbc-8ce5-6c135ceb00fa.png)
 
 ------------------------------------------------------
