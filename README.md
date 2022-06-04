@@ -84,36 +84,34 @@ using linpeas.sh to enumerate the machine u will find this:
 
 the file jake_id_rsa.pub.backup is being sent for the authorized_keys at jake's directory. with that in mind u can generate a ssh key pair at your local machine with the command:
 
-![10](https://user-images.githubusercontent.com/67773431/133356486-7e73f14a-1421-4c95-a089-f87dfada07a5.png)
+![11](https://user-images.githubusercontent.com/67773431/133356487-850e868f-2a4b-4991-9b69-44ffcfa92565.png)
 
 ------------------------------------------------------
 
 now u can send your public ssh key to the file jake_id_rsa.pub.backup
 
-![11](https://user-images.githubusercontent.com/67773431/133356487-850e868f-2a4b-4991-9b69-44ffcfa92565.png)
+![12](https://user-images.githubusercontent.com/67773431/133356488-c2de5c88-0d2b-4a03-b43f-becacf9f5cd2.png)
 
 ------------------------------------------------------
 
 use your private key to access the ssh
 
-![12](https://user-images.githubusercontent.com/67773431/133356488-c2de5c88-0d2b-4a03-b43f-becacf9f5cd2.png)
+![13](https://user-images.githubusercontent.com/67773431/133356489-61421b99-8bfd-4e78-a8ae-082a9220bf19.png)
 
 ------------------------------------------------------
 
 cat the user.txt flag
 
-![13](https://user-images.githubusercontent.com/67773431/133356489-61421b99-8bfd-4e78-a8ae-082a9220bf19.png)
+![14](https://user-images.githubusercontent.com/67773431/133356491-fd3e22b7-4c14-42c6-9ceb-31fb00051eb1.png)
 
 ------------------------------------------------------
 
 see jake's permissions using sudo -l:
 
-![14](https://user-images.githubusercontent.com/67773431/133356491-fd3e22b7-4c14-42c6-9ceb-31fb00051eb1.png)
+![15](https://user-images.githubusercontent.com/67773431/133356494-ac7249ea-6e6e-43bb-a8e9-ef0be5664f2b.png)
 
 ------------------------------------------------------
 
-
-![15](https://user-images.githubusercontent.com/67773431/133356494-ac7249ea-6e6e-43bb-a8e9-ef0be5664f2b.png)
 ![16](https://user-images.githubusercontent.com/67773431/133356495-d8babc19-c666-4c01-b18e-d896d687c419.png)
 ![17](https://user-images.githubusercontent.com/67773431/133356496-ffa41dbe-0823-4074-ac5b-4a95f9777686.png)
 
