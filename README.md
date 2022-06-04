@@ -4,7 +4,7 @@ simple writeup
 
 ------------------------------------------------------
 
-nmap -sC -sV &IP:
+nmap -sC -sV $IP:
 
     Starting Nmap 7.91 ( https://nmap.org/ ) at 2021-09-13 17:31 -03
     Nmap scan report for 10.10.25.124
