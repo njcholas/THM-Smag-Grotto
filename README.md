@@ -102,7 +102,7 @@ use your private key to access the ssh
 
 cat the user.txt flag
 
-![14](https://user-images.githubusercontent.com/67773431/133356491-fd3e22b7-4c14-42c6-9ceb-31fb00051eb1.png)
+![user](https://user-images.githubusercontent.com/67773431/171981365-4e9a20fa-c09b-41d0-8005-c9b2f551f836.png)
 
 ------------------------------------------------------
 
